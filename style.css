@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------ Personal Css--------------------- */
+/* colour Palette
+
+#0B7EC2 = blue
+#fd60a8 = pink
+#e6b10e = yellow
+*/
+
+body{
+	box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  max-width: 75%;
+  margin: auto;
+}
+
+/*--------------typography----------------*/
+
+ header{
+	 font-weight: 600;
+ }
+
+li{
+	font-size: 2.5em;
+}
+main > .topic{
+  font-size: 1em;
+}
+
+h2 {
+	margin: 0 10% 2% 10%;
+	font-size: 1.25em;
+}
+
+p{
+	line-height: 1.5em;
+}
+ h1{
+	 margin-bottom: .75em;
+	 font-size: 2.5em;
+ }
+
+ header > p{
+	 font-size: 1.5em;
+ }
+/*------------------ Display Fonts--------------------- */
+
+.hyper{
+  font-family: 'VT323', monospace;
+	color: #0B7EC2;
+	background-color: #fd60a8a1;
+}
+
+.irrate{
+  font-family: 'Fredoka One', cursive;
+	color: #fd60a8;
+	background-color: #0B7EC221;
+}
+
+.social{
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+	color: #0B7EC2;
+	background-color: #fd60a8ba;
+}
+
+.buy{
+  font-family: 'Bungee Shade', cursive;
+	color: #0B7EC2;
+	background-color: #0B7EC229;
+}
+
+.project{
+  font-family: 'Courier Prime', monospace;
+	color: white;
+	background-color: #fd60a8;
+}
+
+.topic{
+  font-family: 'Monoton', cursive;
+	color: #0B7EC2;
+	background-color: #0B7EC223;
+}
+
+.care{
+  font-weight: 600;
+	color: #0B7EC2;
+}
+/* --------layout --------*/
+
+nav{
+	background-image: url(blue_photo.jpg);
+	background-repeat: no-repeat;
+	background-size: 50%;
+	margin-bottom: 40px;
+}
+
+header{
+	max-width: 75%;
+	margin: 80px 0 40px 0;
+	color: #0B7EC2;
+}
+
+
+main{
+	max-width: 70%;
+	margin: auto;
+}
+
+h2 + p{
+	max-width: 50%;
+	margin: 0 10% 10% 10%
+}
+
+h2 {
+	margin: 0 10% 2% 10%;
+	max-width: 100%;
+}
+
+li{
+margin-bottom: 1.5em;
+padding: 5px;
+}
+
+
+/* --------bottom of page flex box layout --------*/
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+
+main > .hyper {
+direction: flex;
+align-self: start
+}
+
+main > .social {
+direction: flex;
+align-self: start
+}
+
+main > .project {
+direction: flex;
+align-self: start
+}
+
+.hyper +p, .social +p, .project +p {
+	display: flex;
+	align-self: start;
+}
+
+
+footer > ul{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1em;
+	font-weight: 600;
+	color: #fd60a8;
+}
+
+/* --------top of page flex box layout --------*/
+
+nav > ul{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+
+.social .care{
+	display:inline;
+}
+
+.topic{
+	clear: left;
+}
+
+/* --------link states --------*/
+
+
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:focus {
+  background-color: #e6b10e; /yellow/
+}
